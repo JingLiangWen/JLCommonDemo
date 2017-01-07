@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JLHitTestController">
+            <connections>
+                <outlet property="blueView" destination="bpc-0s-wl0" id="0DF-HV-Yr0"/>
+                <outlet property="greyView" destination="GmW-zN-9ia" id="8Lf-yy-0Oj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yellowView" destination="Ugr-UT-zDA" id="Kew-Hk-Dis"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GmW-zN-9ia">
+                    <rect key="frame" x="50" y="120" width="240" height="240"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ugr-UT-zDA">
+                            <rect key="frame" x="180" y="180" width="40" height="40"/>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Vna-b4-cRS"/>
+                                <constraint firstAttribute="width" constant="40" id="xUc-Kd-h05"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.3411764706" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="CWM-Ds-HHg"/>
+                        <constraint firstAttribute="width" constant="240" id="Fdj-rN-D95"/>
+                        <constraint firstAttribute="bottom" secondItem="Ugr-UT-zDA" secondAttribute="bottom" constant="20" id="awR-WL-RVq"/>
+                        <constraint firstAttribute="trailing" secondItem="Ugr-UT-zDA" secondAttribute="trailing" constant="20" id="ejt-nd-Y3q"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpc-0s-wl0">
+                    <rect key="frame" x="50" y="360" width="60" height="60"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="JEj-9o-ihp"/>
+                        <constraint firstAttribute="width" constant="60" id="ijS-kb-hCv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bpc-0s-wl0" firstAttribute="leading" secondItem="GmW-zN-9ia" secondAttribute="leading" id="9gk-48-hEz"/>
+                <constraint firstItem="GmW-zN-9ia" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="GZY-Np-QG8"/>
+                <constraint firstItem="GmW-zN-9ia" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="KTn-q3-IsQ"/>
+                <constraint firstItem="bpc-0s-wl0" firstAttribute="top" secondItem="GmW-zN-9ia" secondAttribute="bottom" id="KnQ-e8-1bN"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
